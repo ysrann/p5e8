@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ular Tangga Edukatif</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game">
+    <h1>🎲 Ular Tangga Edukatif 🎲</h1>
+
+    <!-- Papan Permainan -->
+    <div id="board"></div>
+
+    <!-- Kontrol Game -->
+    <div id="controls">
+      <div id="dice-area">
+        <button id="rollDice">🎲 Lempar Dadu</button>
+        <div id="diceResult">-</div>
+      </div>
+      <div id="turnIndicator">Giliran: Pemain 1 🔴</div>
+    </div>
+
+    <!-- Kotak Pertanyaan -->
+    <div id="questionBox" class="hidden">
+      <div id="questionText"></div>
+      <div id="answers"></div>
+      <div id="timer"></div>
+    </div>
+
+    <!-- Penampil Pemenang -->
+    <div id="winner" class="hidden"></div>
+  </div>
+
+  <!-- Script -->
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
